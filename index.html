@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>Materialize Color Game</title>
+
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	</head>
+
+
+	
+	<body>
+		
+		<section class="main-view">
+			<div class="container">
+				
+				<div class="row z-depth-3">
+					<div class="head-section">
+					<h1 class="col s12">guess color</h1>
+						<p class="col s12">which one is <span id="colorDisplay"></span> ?</p>
+					</div>
+
+					<!-- preload circle -->
+					<div class="preload-section">
+					<i class="medium material-icons tick">check</i>
+					<div class="preloader-wrapper small active preload">
+						<div class="spinner-layer spinner-blue">
+							<div class="circle-clipper left">
+								<div class="circle"></div>
+							</div>
+							<div class="gap-patch">
+								<div class="circle"></div>
+							</div>
+							<div class="circle-clipper right">
+								<div class="circle"></div>
+							</div>
+						</div>
+					
+						<div class="spinner-layer spinner-red">
+							<div class="circle-clipper left">
+								<div class="circle"></div>
+							</div>
+							<div class="gap-patch">
+								<div class="circle"></div>
+							</div>
+							<div class="circle-clipper right">
+								<div class="circle"></div>
+							</div>
+						</div>
+					
+						<div class="spinner-layer spinner-yellow">
+							<div class="circle-clipper left">
+								<div class="circle"></div>
+							</div>
+							<div class="gap-patch">
+								<div class="circle"></div>
+							</div>
+							<div class="circle-clipper right">
+								<div class="circle"></div>
+							</div>
+						</div>
+					
+						<div class="spinner-layer spinner-green">
+							<div class="circle-clipper left">
+								<div class="circle"></div>
+							</div>
+							<div class="gap-patch">
+								<div class="circle"></div>
+							</div>
+							<div class="circle-clipper right">
+								<div class="circle"></div>
+							</div>
+						</div>
+					</div>
+					
+					</div>
+					<div class="msg-container">
+						<button id="reset" class="btn grey">new colors</button>
+					</div>
+					<div class="msg-container">
+						<span id="message"></span>
+					</div>
+					
+
+					<div class="square-section">
+							<div class="square col s4 waves-effect"></div>
+							<div class="square col s4 waves-effect"></div>
+							<div class="square col s4 waves-effect"></div>
+							<div class="square col s4 waves-effect"></div>
+							<div class="square col s4 waves-effect"></div>
+							<div class="square col s4 waves-effect"></div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+		<!--  Scripts-->
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="js/materialize.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
